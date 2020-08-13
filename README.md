@@ -1,5 +1,5 @@
 # spell-command
-Bash script to check the spelling of any command. If no typo then it will execute the command.
+Bash script to check the spelling of any command. If no typo is present, then the command will be executed.
 
 ## Installation
 
@@ -12,5 +12,16 @@ Bash script to check the spelling of any command. If no typo then it will execut
 ```bash
 sc <your command with options>
 ```
-2. If no typo, it will execute your command.
-3. If typos are found, will block your command and show the typo words.
+2. If no typo is present, then your command will be executed.
+3. If typos are found, this function will block your command and show the words with typos.
+
+### Example: 
+
+```bash
+sc git commit -m 'my fyrst commut'
+```
+Will output:
+```bash
+Blocking your command. Typos were found:
+fyrst commut
+```
